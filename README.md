@@ -4,7 +4,7 @@ An extension widget for [Afficone](https://afficone.com) to quickly deploy affil
 
 > All the data this widget uses is stored internally (and securely) on Afficone servers.
 
-![](https://i.imgur.com/Q9HWzbP.png)
+<img alt='' src="https://i.imgur.com/Q9HWzbP.png" width="300">
 
 ## Features
 
@@ -14,10 +14,12 @@ An extension widget for [Afficone](https://afficone.com) to quickly deploy affil
 - Secured by Turnstile captcha 🔒
 
 ## Supported payment providers
-- Stripe (extended coupons support)
+- Stripe (extended support for coupons)
 - Paddle
 - Shopify
 - WooCommerce
+
+Want to see it in action? We have a [live demo](https://afficone.com)!
 
 ## Install
 - `npm install react-affiliate-program`

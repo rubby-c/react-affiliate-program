@@ -1,6 +1,27 @@
 {
     "name": "react-affiliate-program",
-    "version": "0.0.1",
+    "version": "1.0.1",
+    "description": "Easily deploy affiliate programs for React apps",
+    "keywords": [
+        "affiliate",
+        "referral",
+        "react affiliate",
+        "react referral",
+        "afficone"
+    ],
+    "homepage": "https://github.com/rubby-c/react-affiliate-program",
+    "bugs": {
+        "url": "https://github.com/rubby-c/react-affiliate-program/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rubby-c/react-affiliate-program.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Kristiyan Dimitrov",
+        "email": "contact@afficone.com"
+    },
     "type": "module",
     "main": "./dist/index.umd.js",
     "module": "./dist/index.es.js",
