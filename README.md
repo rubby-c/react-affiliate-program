@@ -4,6 +4,8 @@ An extension widget for [Afficone](https://afficone.com) to quickly deploy affil
 
 > All the data this widget uses is stored internally (and securely) on Afficone servers.
 
+![](https://i.imgur.com/Q9HWzbP.png)
+
 ## Features
 
 - Made with Typescript ⭐
