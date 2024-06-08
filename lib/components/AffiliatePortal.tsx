@@ -170,7 +170,7 @@ const AffiliatePortal =
 
         if (!state.loaded || state.portal === null) {
             return (
-                <div className={`af-flex af-justify-center af-text-black af-items-center af-bg-white af-w-96 af-h-112 af-rounded-lg${options.containerShadow ? ' af-shadow': ''}`}>
+                <div className={`af-flex af-justify-center af-text-black af-items-center af-bg-white af-w-96 af-h-128 af-rounded-lg${options.containerShadow ? ' af-shadow': ''}`}>
                     {options?.loadingAnimation ?? <svg
                         xmlns='http://www.w3.org/2000/svg'
                         width={32}
@@ -189,9 +189,9 @@ const AffiliatePortal =
             );
         }
 
-        if (!state.portal.active) {
+        if (!state.portal.active && !state.portal.demo) {
             return (
-                <div className={`af-bg-white af-text-black af-w-96 af-h-112 af-rounded-lg${options.containerShadow ? ' af-shadow': ''}`}>
+                <div className={`af-bg-white af-text-black af-w-96 af-h-128 af-rounded-lg${options.containerShadow ? ' af-shadow': ''}`}>
                     <div className='af-flex af-flex-col af-h-full af-justify-center af-items-center'>
                         <BiX className='af-text-4xl af-mb-4'/>
                         <p className='af-text-center af-text-lg af-px-16'>We are currently not accepting new applications</p>
@@ -202,7 +202,7 @@ const AffiliatePortal =
 
         if (state.msg !== null) {
             return (
-                <div className={`af-bg-white af-text-black af-w-96 af-h-112 af-rounded-lg${options.containerShadow ? ' af-shadow': ''}`}>
+                <div className={`af-bg-white af-text-black af-w-96 af-h-128 af-rounded-lg${options.containerShadow ? ' af-shadow': ''}`}>
                     <div className='af-flex af-flex-col af-space-y-4 af-h-full af-justify-center af-items-center'>
                         <BiDotsHorizontalRounded className='af-text-4xl'/>
                         <p className='af-text-center af-text-lg af-px-16'>{state.msg}</p>
@@ -299,7 +299,7 @@ const AffiliatePortal =
 
         if (state.profile === null) {
             return (
-                <div className={`af-bg-white af-text-black af-w-96 af-h-112 af-rounded-lg af-overflow-hidden${options.containerShadow ? ' af-shadow': ''}`}>
+                <div className={`af-bg-white af-text-black af-w-96 af-h-128 af-rounded-lg af-overflow-hidden${options.containerShadow ? ' af-shadow': ''}`}>
                     {input.type === 'choice' ?
                         <div className='af-relative af-flex af-flex-col af-h-full'>
                             <div style={{
@@ -371,7 +371,7 @@ const AffiliatePortal =
                         : <div className='af-flex af-flex-col af-items-stretch af-h-full'>
                             <div className='affi-header af-w-full af-flex af-items-center af-justify-between af-p-4'>
                                 <div className='af-flex af-items-center af-space-x-2'>
-                                    <Button onClick={() => setInput({ ...input, type: 'choice' })}
+                                    <Button onClick={() => setInput({ ...input, type: 'choice', error: null })}
                                             className='hover:af-bg-gray-100 af-rounded-md af-p-1 af-border-none af-transition-colors me-2'>
                                         <FaChevronLeft className='af-text-sm'/>
                                     </Button>
@@ -413,9 +413,9 @@ const AffiliatePortal =
                                     </label>
                                 </div>}
 
-                                <iframe width={300} height={65} src='https://afficone.com/turnstile-iframe'/>
-
                                 {input.error && <p className='af-font-medium af-text-red-500'>{input.error}</p>}
+
+                                <iframe width={300} height={65} src='https://afficone.com/turnstile-iframe'/>
                             </div>
 
                             <div className='affi-footer af-w-full af-flex af-items-center af-justify-between af-p-4'>
@@ -449,7 +449,7 @@ const AffiliatePortal =
         }
 
         return (
-            <div className={`af-bg-white af-text-black af-w-96 af-h-112 af-rounded-lg af-overflow-hidden${options.containerShadow ? ' af-shadow': ''}`}>
+            <div className={`af-bg-white af-text-black af-w-96 af-h-128 af-rounded-lg af-overflow-hidden${options.containerShadow ? ' af-shadow': ''}`}>
                 <div className='af-flex af-flex-col af-items-stretch af-h-full'>
                     <div className='affi-header af-w-full af-flex af-items-center af-justify-between af-p-4'>
                         <Button

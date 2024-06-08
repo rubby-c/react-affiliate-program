@@ -25,8 +25,8 @@ export default defineConfig({
                 },
             },
         },
-        sourcemap: true,
-        emptyOutDir: true,
+        sourcemap: false,
+        emptyOutDir: true
     },
     plugins: [
         react(),

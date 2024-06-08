@@ -57,7 +57,7 @@ export async function getPortalData(token: string): Promise<PortalData> {
 
 export async function getProfile(authToken: string): Promise<AffiliateProfile> {
     if (!authToken) {
-        throw new Error('useAfficone\'s authToken property is undefined.');
+        throw new Error('authToken is undefined.');
     }
 
     const res = await fetch(`https://api.afficone.com/affiliate/profile`, {

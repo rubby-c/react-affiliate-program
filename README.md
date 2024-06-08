@@ -11,7 +11,7 @@ An extension widget for [Afficone](https://afficone.com) to quickly deploy affil
 - Made with Typescript ⭐
 - SSR support (Next.js) ⚡
 - Reusable logic to create your own UI 🎨
-- Secured by Turnstile captcha 🔒
+- Secured by Cloudflare Turnstile captcha 🔒
 
 ## Supported payment providers
 - Stripe (extended support for coupons)

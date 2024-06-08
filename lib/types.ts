@@ -1,5 +1,6 @@
 export type PortalData = {
     id: string,
+    demo: boolean,
     active: boolean,
     prefix: string,
     name: string,
